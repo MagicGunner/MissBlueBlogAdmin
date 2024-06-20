@@ -26,6 +26,7 @@
 
 <script>
 import { generaMenu } from '@/assets/js/menu'
+import { data, methods } from 'vue-echarts';
 export default {
   data: function () {
     return {
@@ -57,6 +58,7 @@ export default {
               that.$message.error(data.message)
             }
           })
+
         } else {
           return false
         }
