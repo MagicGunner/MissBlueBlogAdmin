@@ -49,6 +49,7 @@ export default {
           param.append('username', that.loginForm.username)
           param.append('password', that.loginForm.password)
           that.axios.post('/api/users/login', param).then(({ data }) => {
+            console.log("点击了登录")
             if (data.flag) {
               that.$store.commit('login', data.data)
               generaMenu()

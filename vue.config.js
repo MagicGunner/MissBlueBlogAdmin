@@ -10,10 +10,10 @@ module.exports = defineConfig({
     port:8081,
     proxy: {
       '/api': {
-        target: 'http://localhost:8080/ap1',
+        target: 'http://localhost:8080',
         changeOrigin: true,
         pathRewrite: {
-          '^/api': ''
+          "/api": ''
         }
       }
     }
